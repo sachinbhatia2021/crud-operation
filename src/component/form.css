@@ -1,0 +1,10 @@
+.main-content {
+    margin-top: 80px; /* Match the height of the fixed nav bar */
+}
+.img{
+height: 50vh;
+    background-position: center;
+background-repeat: no-repeat;
+/* background-size: cover; */
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSLU5_eUUGBfxfxRd4IquPiEwLbt4E_6RYMw&s');
+}

@@ -1,0 +1,14 @@
+.navbox{
+    height: 80px;
+    width: 100%;
+    background-color: blueviolet;
+    color: white;
+   position: fixed;
+   top: 0;
+    justify-content: center;
+}
+.text{
+    display: flex;
+    justify-content:end;
+    
+}
