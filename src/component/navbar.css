@@ -1,8 +1,8 @@
 .navbox{
     height: 80px;
     width: 100%;
-    background-color: blueviolet;
-    color: white;
+    background-color: #201F3E;
+    
    position: fixed;
    top: 0;
     justify-content: center;
@@ -10,5 +10,27 @@
 .text{
     display: flex;
     justify-content:end;
-    
+
+}
+.hover {
+    position: relative;
+    display: inline-block;
+}
+
+.hover-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #140e0e;
+    border-radius: 20px;
+    padding: 3px;
+    width: 130px;
+    border: 1px solid #ccc;
+    z-index: 1;
+    color: white;
+    /* padding-top: 20px; */
+}
+
+.hover:hover .hover-content {
+    display: block;
 }

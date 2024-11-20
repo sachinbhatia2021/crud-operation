@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './navbar.css'
 function Navbar(){
 
@@ -5,7 +6,7 @@ function Navbar(){
 <nav className="navbox navbar navbar-expand-lg">
   <div className="container-fluid">
     <a className="navbar-brand" href="#">
-     <b className='fs-2' >Bhatia ji</b>
+     <b style={{color:"white"}} className='fs-2' >Ww..</b>
     </a>
     <button
       className="navbar-toggler"
@@ -18,19 +19,33 @@ function Navbar(){
     >
       <span className="navbar-toggler-icon" />
     </button>
-    <div className="text  collapse navbar-collapse" id="navbarNav">
-      <ul className="navbar-nav">
+    <div  className="text  collapse navbar-collapse" id="navbarNav">
+      <ul  className="navbar-nav">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">
-            Home
-          </a>
+
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">
-            Add users
-          </a>
-        </li>
+        <Link  to="/" className="nav-link text-light">Add users</Link>
        
+        </li>
+        <li className="nav-item">
+        <div class="hover" style={{'color':'white',margin:'22px'}}>
+
+        View users    <div class="hover-content">
+    <Link  to="/viewusers" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Tooltip on right" className="nav-link text-light" >
+after login
+</Link>
+    </div>
+</div>
+
+
+
+
+        </li>
+        <li className="nav-item">
+        <Link to="/login" className="nav-link text-light" >Login</Link>
+          
+        </li>
       </ul>
     </div>
   </div>
